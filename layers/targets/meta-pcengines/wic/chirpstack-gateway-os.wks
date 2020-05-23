@@ -1,0 +1,8 @@
+# boot
+part --source bootimg-grub-legacy --ondisk sda --fstype=vfat --label boot --active --align 4096 --fixed-size 64
+# rootfs a
+part --source rootfs --ondisk sda --fstype=ext4 --label rootfs-a --align 4096 --fixed-size 512
+# rootfs b
+part --source rootfs --ondisk sda --fstype=ext4 --label rootfs-b --align 4096 --fixed-size 512
+# data
+part --ondisk sda --fstype=ext4 --label data --align 4096 --fixed-size 512
