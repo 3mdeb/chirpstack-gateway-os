@@ -4,8 +4,7 @@ WKS_FILES = "chirpstack-gateway-os.wks"
 IMAGE_INSTALL += "connman \
                   connman-client \
                   software-update \
-                  chirpstack-concentratord-sx1301 \
-                  chirpstack-concentratord-sx1302 \
+                  packet-forwarder \
                   gateway-config \
                   gateway-id \
 "
